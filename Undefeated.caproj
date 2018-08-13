@@ -10,13 +10,11 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
@@ -51,20 +49,8 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="StartGame" sid="993113378094032">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Option" sid="319909782770872">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Exit" sid="517687441966223">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="Mouse" sid="538596895589564">
             <plugin id="Mouse" />
-        </object-type>
-        <object-type name="Button" sid="312300308615472">
-            <plugin id="Button" />
         </object-type>
         <object-type name="Browser" sid="418252449397849">
             <plugin id="Browser" />
@@ -72,16 +58,7 @@
         <object-type name="Tilemap" sid="220246149144330">
             <plugin id="Tilemap" />
             <texture />
-            <tiles>
-                <tile id="12">
-                    <collision-poly>
-                        <point x="1" y="1" />
-                        <point x="1" y="0" />
-                        <point x="0.015625" y="0.0078125" />
-                        <point x="0" y="1" />
-                    </collision-poly>
-                </tile>
-            </tiles>
+            <tiles />
         </object-type>
         <object-type name="char_house" sid="544881961375584">
             <plugin id="Sprite" />
@@ -104,14 +81,6 @@
                             <point x="0.137615" y="0.403846" />
                         </collision-poly>
                     </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="728364645379469">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801925932954466" speed="5">
-                    <frame duration="1" hotspotX="0.500813" hotspotY="0.5" original-source="D:\Construct 2\undefeated\coba liat dulu mana tau dibutuhin\karakter\2.PNG" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -826,106 +795,65 @@
         <object-type name="Keyboard" sid="915726920616395">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Sprite2" sid="770860476095077">
+        <object-type name="MainBackground" sid="555019405685287">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\pingk\Downloads\bg.jpg" />
+        </object-type>
+        <object-type name="GameMenu" sid="132579541667822">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Construct 2\undefeated\coba liat dulu mana tau dibutuhin\button start screen\button new game sama load game with text.png" />
+        </object-type>
+        <object-type name="SettingButton" sid="284829789146303">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Construct 2\undefeated\coba liat dulu mana tau dibutuhin\button start screen\setting button.png" />
+        </object-type>
+        <object-type name="ExitButton" sid="275176417520145">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Construct 2\undefeated\coba liat dulu mana tau dibutuhin\button start screen\exit button.png" />
+        </object-type>
+        <object-type name="NewGame" sid="643889976874862">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954808055881319" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154145943907276" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="931649383760234">
+        <object-type name="LoadGame" sid="374567487582240">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="761886630791075">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839533284274363" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255367651290531" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="341393112111420">
+        <object-type name="Exit" sid="187393816692541">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159326291026017" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\5z1KX.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="162401720986546" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite5" sid="565370057468816">
+        <object-type name="Setting" sid="220519122535576">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249289004131957" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\5z1KX.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668173389089020" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="Tilemap2" sid="532337542701374">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\5z1KX.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap3" sid="742635508185138">
-            <plugin id="Tilemap" />
-            <behaviors>
-                <behavior-type name="Solid" sid="957852462299334">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\smg.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap4" sid="818991755101157">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\smg.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap5" sid="982291449754379">
-            <plugin id="Tilemap" />
-            <behaviors>
-                <behavior-type name="Solid" sid="278737421404418">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\smg.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap6" sid="435745975873931">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\sdsdsd.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap7" sid="246399042022128">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\19ba32a65698a6b879ae0cff5dcf503b.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap8" sid="536054539867365">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\LAPTOP\Desktop\PROJECT LUCKNUT\buat map\batu.png" />
-            <tiles />
-        </object-type>
-        <object-type global="1" name="Array" sid="686637862042122">
-            <plugin id="Arr" />
-        </object-type>
-        <object-type name="Tilemap9" sid="910505171093369">
-            <plugin id="Tilemap" />
-            <texture />
-            <tiles />
         </object-type>
     </object-folder>
     <families>
-        <family name="Menu" plugin-id="Text" sid="779286222441028">
+        <family name="MenuButton" plugin-id="Sprite" sid="910771097640765">
             <members>
                 <member>Exit</member>
-                <member>Option</member>
-                <member>StartGame</member>
+                <member>LoadGame</member>
+                <member>NewGame</member>
+                <member>Setting</member>
             </members>
             <instance-variables>
-                <instance-variable name="Destination" sid="561336565278650" type="string" />
+                <instance-variable name="Destination" sid="130982696618833" type="string" />
             </instance-variables>
         </family>
     </families>
@@ -936,14 +864,12 @@
         </layout-folder>
         <layout-folder name="Game">
             <layout>game_play.xml</layout>
-            <layout>Dungeon.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder>
         <event-sheet>start_screen.xml</event-sheet>
         <event-sheet>game_play.xml</event-sheet>
         <event-sheet>setting_page.xml</event-sheet>
-        <event-sheet>Dungeon.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="3" />
